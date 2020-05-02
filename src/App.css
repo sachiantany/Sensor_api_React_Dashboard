@@ -1,38 +1,122 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+body{
+    background: radial-gradient(#e5e5e5,#ffff,#e5e5e5);
+}
+
+.card{
+    width: 20rem;
+    margin-bottom: 20px;
+}
+
+.card:hover{
+    box-shadow: 5px 10px 20px 1px rgba(0,0,0,0.253)!important;
+}
+
+.card-body{
+    padding: 3rem 0 !important;
+
+}
+
+.card-text{
+    font-size: 0.9rem;
+    padding: 0.4rem 1.9rem;
+}
+
+.container-fluid .row{
+    padding-top: 6rem;
+}
+
+.progress {
+    background-color: #d8d8d8;
+    border-radius: 20px;
+    position: relative;
+    margin: 15px 25px;
+    height: 50px;
+    width: 270px;
+}
+
+.progress-done {
+    background: linear-gradient(to left, #003366, #00CCFF,#C9F6FF);
+    box-shadow: 0 3px 3px -5px #00CCFF, 0 2px 5px #00CCFF;
+    border-radius: 20px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 0;
+    opacity: 0;
+    transition: 1s ease 0.3s;
+}
+
+.progress-done-sm{
+    background: linear-gradient(to left,#111111, #B0FC38,#ffffff);
+    box-shadow: 0 3px 3px -5px #B0FC38, 0 2px 5px #B0FC38;
+    border-radius: 20px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 0;
+    opacity: 0;
+    transition: 1s ease 0.3s;
+}
+
+.iconLableDiv{
+    float: left;
+}
+
+.floorRoom{
+    margin-top: -6px;
+    margin-bottom: 0px;
+}
+
+.divFloorRoom{
+    padding-bottom: 10px;
+}
+.cardData{
+    margin-top: 10px;
+}
+
 .App {
-  text-align: center;
+    text-align: center;
 }
 
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+    height: 40vmin;
+    pointer-events: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
 }
 
 .App-link {
-  color: #61dafb;
+    color: #61dafb;
 }
 
 @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
+
+
