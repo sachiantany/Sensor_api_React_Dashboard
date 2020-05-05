@@ -10,6 +10,7 @@ export default class App extends Component{
   constructor(props) {
     super(props);
 
+    /* declare state*/
     this.state={
         sensors: []
     };
@@ -19,9 +20,13 @@ export default class App extends Component{
   }
 
   componentDidMount() {
+    
+    /* Call the data read function*/
       this.sensorService.getAll()
         .then(data => this.setState({sensors:data}));
 
+    /* Set API data reload time to 40 seconds*/
+    
     this.timer = setInterval(() => this.sensorService.getAll()
         .then(data => this.setState({sensors:data})) ,40000 );
   }
