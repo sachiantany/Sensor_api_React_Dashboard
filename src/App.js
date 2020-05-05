@@ -30,10 +30,12 @@ export default class App extends Component{
         clearInterval(this.timer);
         this.timer = null;
     }
-
+  
+/* Creating card function */
   createCard(){
       var data = this.state.sensors;
 
+    /* Smocklevel progress bar */
       const SmokeLevel = ({done}) => {
           const [style, setStyle] = React.useState({});
 
@@ -54,7 +56,7 @@ export default class App extends Component{
               </div>
           )
       }
-
+    /* Co2  level progress bar */
       const CO2Level = ({done}) => {
           const [style, setStyle] = React.useState({});
 
@@ -77,7 +79,7 @@ export default class App extends Component{
           )
       }
 
-
+      /* Set data to the Card */
       return data.map(sen =>(
           <div  className="col-md-4">
               <div className={"card text-center shadow " + ( ((sen.smoke > 5) || (sen.co2 >5)) && (sen.status == 'active') ? 'bg-danger' : 'bg-light')}>
